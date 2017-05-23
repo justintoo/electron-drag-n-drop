@@ -22,15 +22,17 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    'width': 580,
-    'height': 380,
+    'width': 1080,
+    'height': 720,
     'min-width': 580,
     'min-height': 380,
-    'max-width': 580,
-    'max-height': 380,
+//    'max-width': 580,
+//    'max-height': 380,
     'fullscreen': false,
     'title-bar-style': 'hidden-inset'
   });
+
+  mainWindow.setResizable(true);
 
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/index.html');
