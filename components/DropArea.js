@@ -17,13 +17,13 @@ const DropArea = (props) => {
         </div>
         <div className="drop-message">
           <div className="start-message">
-            Drop a project folder on this window
+            Drop a JSON results file on this window
           </div>
           <div className="release-message">
-            Now let go of the folder
+            Now let go of the file
           </div>
           <div className="loading-message">
-            Loading the project
+            Loading the results
           </div>
         </div>
       </div>
